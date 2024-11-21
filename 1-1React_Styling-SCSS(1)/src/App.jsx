@@ -8,6 +8,7 @@ function App() {
     <>
     <div className="test">테스트용 div</div>
     <h2>SCSS 변수 연습</h2>
+    
     <ul>
       <li>하이</li>
       <li>Hi</li>
