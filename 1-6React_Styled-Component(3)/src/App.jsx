@@ -72,8 +72,8 @@ const GlobalStyle = createGlobalStyle`
 function App() {
   return (
     <>
-    <Container>
     <GlobalStyle />  
+    <Container>
       <Header />
       <Nav />
       <Tab />
