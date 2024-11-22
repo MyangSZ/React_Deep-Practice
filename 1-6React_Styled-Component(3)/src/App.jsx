@@ -61,20 +61,19 @@ const StyledMain = styled.main`
 const GlobalStyle = createGlobalStyle`
   ::-webkit-scrollbar {
   display: none;
-
+  }
   *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
-}
+
 `
-
-
 function App() {
   return (
+    <>
     <Container>
-      <GlobalStyle />
+    <GlobalStyle />  
       <Header />
       <Nav />
       <Tab />
@@ -84,6 +83,7 @@ function App() {
         ))}
       </StyledMain>
     </Container>
+    </>
   );
 }
 
