@@ -1,16 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { contents } from "./assets/data/contents";
+import Content from "./components/Content";
+import Header from "./components/Header";
+import Nav from "./components/Nav";
+import Tab from "./components/Tab";
+import "./AppSCSS.scss";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>asdlfkjasdlkflsdakjf</div>
-    </>
-  )
+    <div className="container">
+      <Header />
+      <Nav />
+      <Tab />
+      <main>
+        {contents.map((el) => (
+          <Content key={el.id} content={el} />
+        ))}
+      </main>
+    </div>
+  );
 }
 
-export default App
+export default App;
