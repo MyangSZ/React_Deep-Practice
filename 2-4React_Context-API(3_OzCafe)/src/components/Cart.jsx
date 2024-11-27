@@ -36,7 +36,7 @@ function Cart({}) {
 }
 
 function CartItem({ item, options, quantity }) {
-  const { cart, setCart, removeFromCart } = useCart();
+  const { removeFromCart } = useCart();
   return (
     <li className="cart-item">
       <div className="cart-item-info">
