@@ -45,7 +45,7 @@ function CartItem({ item, options, quantity }) {
       </div>
       <div className="cart-item-option">
         {Object.keys(options).map((el) => (
-          <div>
+          <div key={el}>
             {el} : {data.options[el][options[el]]}
           </div>
         ))}
@@ -57,7 +57,7 @@ function CartItem({ item, options, quantity }) {
           // 삭제버튼 클릭시 아이템ID 일치여부 확인 후 일치하는 메뉴 제외 후 나머지만 남겨준다.
           // 일부만 남기는 필터메서드 사용
           // 요소 ID가 삭제하기 버튼 누를때 일치하는지 확인 후 일치하지 않는 요소들만 화면에 남긴다.
-          setCart(cart.filter((el) => el.id !== item.id));
+
           dispatch(removeFromCart(item.id));
         }}
       >

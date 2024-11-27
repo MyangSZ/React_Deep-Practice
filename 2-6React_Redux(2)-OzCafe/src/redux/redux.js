@@ -4,7 +4,7 @@ import data from "../assets/data";
 // Action 객체
 // 장바구니 추가할 떄
 export const addToCart = (options, quantity, id) => {
-  return { type: "addToCart", payload: (options, quantity, id) };
+  return { type: "addToCart", payload: { options, quantity, id } };
 };
 
 // 장바구니에서 삭제할 떄
@@ -17,12 +17,12 @@ export const removeFromCart = (id) => {
 
 // REducer 만들기
 // 카트 상태 관리
-const carReducer = (state = [], action) => {
+const cartReducer = (state = [], action) => {
   switch (action.type) {
     case "addToCart":
       return [...state, action.payload];
     case "removeFromCart":
-      return state.filter((el) => el.id !== action.payload);
+      return state.filter((el) => el.id !== action.payload.id);
     default:
       return state;
   }
@@ -34,7 +34,7 @@ const menuReducer = (state = data.menu, action) => {
 };
 
 // reducer 합쳐주기
-const rootReducer = combineReducers({ carReducer, menuReducer });
+const rootReducer = combineReducers({ cartReducer, menuReducer });
 
 // store 만들기
 export const store = legacy_createStore(rootReducer);
