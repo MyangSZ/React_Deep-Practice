@@ -4,10 +4,9 @@ import Header from "./components/Header";
 import Nav from "./components/Nav";
 import Tab from "./components/Tab";
 
-
 function App() {
   return (
-    <div className="grid grid-cols-[80px_1fr] grid-rows-[80px_40px_1fr]" >
+    <div className="grid grid-cols-[80px_1fr] grid-rows-[80px_40px_1fr]">
       <Header />
       <Nav />
       <Tab />
