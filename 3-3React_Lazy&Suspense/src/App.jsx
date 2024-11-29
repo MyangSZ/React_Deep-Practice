@@ -1,9 +1,6 @@
 import { lazy, Suspense, useState } from "react";
 import "./App.css";
 import { Route, Routes, useNavigate } from "react-router-dom";
-// import Main from "./page/Main";
-// import Detail from "./page/Detail";
-// import Search from "./page/Search";
 
 // lazy 사용하기
 // 인자로 함수 전달. import 함수가 페이지가 있는 경로 전달받는 형태
@@ -12,6 +9,10 @@ const Main = lazy(() => import("./page/Main"));
 const Detail = lazy(() => import("./page/Detail"));
 // 서치 페이지
 const Search = lazy(() => import("./page/Search"));
+
+// import Main from "./page/Main";
+// import Detail from "./page/Detail";
+// import Search from "./page/Search";
 
 function App() {
   const [inputValue, setInputValue] = useState("");
