@@ -10,6 +10,7 @@ const Detail = lazy(() => import("./page/Detail"));
 // 서치 페이지
 const Search = lazy(() => import("./page/Search"));
 
+// 아래 코드 lazy, Suspense 사용하기
 // import Main from "./page/Main";
 // import Detail from "./page/Detail";
 // import Search from "./page/Search";
