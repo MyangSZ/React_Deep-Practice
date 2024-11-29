@@ -1,5 +1,4 @@
 // 서버에서 데이터를 받아올 때
-
 import axios from "axios";
 import { memo, useCallback, useEffect, useRef, useState } from "react";
 
