@@ -29,7 +29,7 @@ import { useEffect, useRef, useState } from "react";
 
 // function Search() {
 //   const [searchParams] = useSearchParams();
-//   // 변수 filteredData를 변경될 떄 화면에 표시되도록 상태로 만들기
+// 변수 filteredData를 변경될 떄 화면에 표시되도록 상태로 만들기
 //   const [filteredData, setFilteredData] = useState(data);
 //   const param = searchParams.get("animal");
 //   const reg = getRegExp(param);
