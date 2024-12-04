@@ -1,8 +1,6 @@
-# React + Vite
+## Next.js 사용하기
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+동물좋아 페이지 Next.js 이용해서 만들어보기
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- next.js 12버전사용
+- 동물 좋아요 버튼 및 찜목록 페이지 만들기
